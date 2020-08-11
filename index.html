@@ -1,100 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <title>PWS A5 HW</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
   </head>
   <body>
     <div class="container">
-      <h1>Курочка ряба</h1>
-      <div class="row">
-        <div id="result"></div>
+      <div class="progress mt-5">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 10%;"
+          aria-valuenow="10"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
       </div>
-
-      <form id="messages">
-        <div class="form-group">
-          <label for="var1">var1</label>
-          <input
-            id="var1"
-            type="text"
-            class="form-control"
-            name="var1"
-            placeholder="Дед"
-            value="Дед"
-          />
-          <label for="var2">var2</label>
-          <input
-            id="var2"
-            type="text"
-            class="form-control"
-            name="var2"
-            placeholder="Баба"
-            value="Баба"
-          />
-          <label for="var3">var3</label>
-          <input
-            id="var3"
-            type="text"
-            class="form-control"
-            name="var3"
-            placeholder="Курочка"
-            value="Курочка"
-          />
-          <label for="var4">var4</label>
-          <input
-            id="var4"
-            type="text"
-            class="form-control"
-            name="var4"
-            placeholder="Яицо"
-            value="Яицо"
-          />
-          <label for="var5">var5</label>
-          <input
-            id="var5"
-            type="text"
-            class="form-control"
-            name="var5"
-            placeholder="Мышка"
-            value="Мышка"
-          />
-          <label for="var6">var6</label>
-          <input
-            id="var6"
-            type="text"
-            class="form-control"
-            name="var6"
-            placeholder="Хвостиком"
-            value="Хвостиком"
-          />
-          <label for="speach">speach</label>
-          <input
-            id="speach"
-            type="text"
-            class="form-control"
-            name="speach"
-            placeholder="Текст"
-            value="Текст"
-          />
+      <div class="row mt-3">
+        <div class="col">
+          <button type="button" id="add1" class="btn btn-block btn-warning">
+            1%
+          </button>
         </div>
-      </form>
-
-      <div class="row">
-        <a id="button-fetch" class="btn btn-primary">Создать</a>
-      </div>
-      <div class="row">
-        <a id="button-replace" class="btn mt-2 btn-primary">Заменить</a>
+        <div class="col">
+          <button type="button" id="add3" class="btn btn-block btn-secondary">
+            3%
+          </button>
+        </div>
+        <div class="col">
+          <button type="button" id="add7" class="btn btn-block btn-success">
+            7%
+          </button>
+        </div>
       </div>
     </div>
-
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/ryaba.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/pb.js"></script>
   </body>
 </html>
